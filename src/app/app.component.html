@@ -1,0 +1,24 @@
+<header>
+  <div>
+    <img
+      src="https://angular.io/assets/images/logos/angular/angular.svg"
+      alt="Angular"
+      height="50px"
+      width="50px"
+    />
+  </div>
+  <nav>
+    <ng-container *featureFlag="'snippets'">
+      <a routerLink="/snippets">Snippets</a>
+    </ng-container>
+    <ng-container *featureFlag="'bookmarks'">
+      <a routerLink="/bookmarks">Bookmarks</a>
+    </ng-container>
+    <ng-container *featureFlag="'packages'">
+      <a routerLink="/packages">Packages</a>
+    </ng-container>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

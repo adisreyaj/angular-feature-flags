@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 80px;
+  background-color: rgb(28, 35, 75);
+}
+
+header a {
+  color: white;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
